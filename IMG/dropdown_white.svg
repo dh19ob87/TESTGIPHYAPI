@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="dropdown_white.svg"
+   id="svg13"
+   version="1.1"
+   viewBox="0 0 10 6"
+   height="6px"
+   width="10px">
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>dropdown</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs17" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg13"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="2.6074583"
+     inkscape:cx="5"
+     inkscape:zoom="101.9"
+     inkscape:pagecheckerboard="false"
+     showgrid="false"
+     id="namedview15"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#65ff00" />
+  <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+  <title
+     id="title2">dropdown</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     style="fill:#ffffff"
+     fill-rule="evenodd"
+     fill="none"
+     stroke-width="1"
+     stroke="none"
+     id="Page-1">
+    <g
+       style="fill:#ffffff"
+       transform="translate(-1184.000000, -83.000000)"
+       id="gifOS_misguifos">
+      <g
+         style="fill:#ffffff"
+         transform="translate(1.000000, 1.000000)"
+         id="nav-bar">
+        <g
+           style="fill:#ffffff"
+           transform="translate(1038.000000, 67.000000)"
+           id="dropdown_tema_normal">
+          <g
+             style="fill:#ffffff"
+             transform="translate(150.000000, 18.000000) rotate(-270.000000) translate(-150.000000, -18.000000) translate(147.000000, 13.000000)"
+             id="dropdown">
+            <path
+               style="fill:#ffffff"
+               fill="#110038"
+               id="back-copy"
+               d="M4,5 L4,6 L3,6 L3,7 L2,7 L2,8 L1,8 L1,9 L0,9 L0,0 L1,0 L1,1 L2,1 L2,2 L3,2 L3,3 L4,3 L4,4 L5,4 L5,5 L4,5 Z" />
+            <path
+               style="fill:#ffffff"
+               fill="#FFFFFF"
+               id="Combined-Shape"
+               d="M1,9 L1,8 L2,8 L2,7 L3,7 L3,6 L4,6 L4,5 L6,5 L6,6 L5,6 L5,7 L4,7 L4,8 L3,8 L3,9 L2,9 L2,10 L1,10 L1,9 Z" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <path
+     id="path846"
+     d="M 4.0039254,5.4926398 V 4.9921492 H 3.5035246 3.0031239 L 3.0005806,4.4941119 2.9980373,3.9960746 2.5,3.9935313 2.0019627,3.9909879 V 3.495494 3 H 1.501472 1.0009814 V 2.4995093 1.9990186 H 0.50049068 0 V 1.5034347 1.0078508 H 0.99598469 1.9919693 l 0.00254,0.4980373 0.00254,0.4980373 0.4980373,0.00254 0.4980373,0.00254 V 2.504506 3 H 3.4936212 3.9941119 V 3.5004907 4.0009814 H 4.4946026 4.9950932 V 4.9970559 5.9931305 H 4.4995093 4.0039254 Z"
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.0148362;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</svg>

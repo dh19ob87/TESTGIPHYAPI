@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <base href="#"> -->
+    <meta name="author" content="dh19ob87">
+    <meta name="description" content="Aplicación para consumir la API de GIPHY">
+    <meta name="keywords" content="gif, trending, search, API, giphy, js, html, css, full, web, stack, developer">
+    <meta name="application-name" content="gif.OS">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="author" href="mailto:dh19ob87@gmail.com">
+    <link rel="next" type="text/html" href="/html/search.html">
+    <link rel="stylesheet" type="text/css" href="/CSS/lightTheme.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/darkTheme.css">
+    <script type="text/javascript" src="./JS/script_Index.js" defer></script>
+    <title> gif.OS </title>
+  </head>
+  <body>
+    <section id="formulario">
+      <label id="contadorVisitas" class="cabecera">&nbsp;&nbsp;¡Bienvenidos a Guifos.com! ------ Donde los gifs están ////// Número de visitas: 1</label>
+      <figure class="logo">
+        <a href="index.html"><img id="logo" src="/IMG/gifOF_logo.png" alt="logo del sitio web"></a>
+      </figure>
+      <button type="button" class="buttonForm">Crear Guifos</button>
+      <button type="button" class="buttonForm">Elegir Tema</button><button type="button" class="buttonForm"> <img src="../IMG/forward.svg" alt=""> </button>
+      <a href="/HTML/misgifos.html" class="linkFoem"><u>M</u>is Guifos</a>
+      <div class="inputForm">
+        <label class="cabecera">&nbsp;&nbsp;Buscar</label>
+        <form id="formTag" action="/HTML/search.html" method="get">
+          <input type="text" id="inputTextForm" name="tagSearch" value="" placeholder="Busca gifs, hashtags, temas, busca lo que quieras." autocomplete="off">
+          <button type="submit" class="buttonForm" id="btnSearchFormSubmit" name="buttonSubmit" disabled><img src="/IMG/lupa_inactive.svg" width="16" height="16" alt="lupaSVG"> &nbsp;Buscar</button>
+        </form>
+      </div>
+      <div id="palabrasSugeridas" class="palabrasSugeridas">
+      </div>
+    </section>
+    <section id="gifSugerencias" class="coleccion">
+      <input type="text" name="sugerenciaInput" value="  Hoy te sugerimos:" class="tituloSeccion" disabled>
+      <div id="containerSuggestGifs" class="gifs">
+      </div>
+    </section>
+    <section id="gifTrending" class="coleccion">
+      <input type="text" name="trendingInput" value="  Tendencias:" class="tituloSeccion" disabled>
+      <div id="trendingGuifos" class="gifs">
+      </div>
+      <button type="button" class="buttonForm" name="verMasTrending">Más</button>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,1479 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+@font-face {
+font-family: "Chakra Petch Regular";
+src: url("../FONTS/ChakraPetch-Regular.ttf");
+}
+
+@font-face {
+font-family: "Chakra Petch Bold";
+src: url("../FONTS/ChakraPetch-Bold.ttf");
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(17, 0, 56, 1);
+  font-family: 'Chakra Petch Regular', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+ol {
+  line-height: 22px;
+  list-style: none;
+  list-style-position: inside;
+  counter-reset: contador;
+  margin: 0px;
+  /* width: 80%; */
+}
+
+ol li {
+  counter-increment: contador;
+}
+
+ol li::before {
+  content: counter(contador) ") ";
+  font-weight: bold;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+label, button, input, a{
+  font-family: 'Chakra Petch Regular', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+button{
+  color: rgba(255, 255, 255, 1);
+}
+
+.cabecera{
+  width: 100%;
+  height: 23px;
+  display: block;
+  position: relative;
+  color: white;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(238, 62, 254, 1)), to(rgba(46, 50, 251, 1)));
+  background-image: linear-gradient(270deg, rgba(238, 62, 254, 1) 0%, rgba(46, 50, 251, 1) 100%);
+  -webkit-box-shadow: 0 1px 0 0 rgba(17, 0, 56, 1);
+  box-shadow: 0 1px 0 0 rgba(17, 0, 56, 1);
+  line-height: 25px;
+  font-family: 'Chakra Petch Bold';
+  text-indent: 10px;
+}
+
+.inputForm{
+  width: 85%;
+  height: 100px;
+  position: relative;
+  left: 7%;
+  top:115px;
+  background-color: rgba(180, 180, 180, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(143, 143, 143, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(143, 143, 143, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+.buttonForm{
+  background-color: rgba(238, 62, 254, 1);
+  border: 1px solid rgba(17, 0, 56, 1);
+  -webkit-box-shadow: inset -1px -1px 0 0 rgba(153, 125, 151, 1), inset 1px 1px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -1px -1px 0 0 rgba(153, 125, 151, 1), inset 1px 1px 0 0 rgba(255, 255, 255, 1);
+  display: inline-block;
+  position: relative;
+}
+
+.tituloSeccion{
+  width: 85%;
+  height: 32px;
+  position: relative;
+  left: 7%;
+  display: block;
+  border: 1px solid rgba(46, 50, 251, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(230, 220, 228, 1), inset 2px 2px 0 0 rgba(128, 104, 125, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(230, 220, 228, 1), inset 2px 2px 0 0 rgba(128, 104, 125, 1);
+  background-color: white;
+  color: black;
+  text-indent: 10px;
+}
+
+.menu{
+  width: 15%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 72.5%;
+  top: 130px;
+  z-index: 2;
+  background-color: rgba(180, 180, 180, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(180, 180, 180, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(180, 180, 180, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+.menuSearchPage{
+  width: 15%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  left: 72.5%;
+  bottom: 112px;
+  background-color: rgba(180, 180, 180, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(180, 180, 180, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(180, 180, 180, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+.menuMyGuifoPage{
+  width: 15%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 72.5%;
+  top: 130px;
+  z-index: 2;
+  background-color: rgba(180, 180, 180, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(143, 143, 143, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(143, 143, 143, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+.optionTheme{
+  width: 90%;
+  height: 36px;
+  text-indent: 10px;
+  position: relative;
+  background-color: rgba(204, 204, 204, 1);
+  border: 1px solid rgba(128, 128, 128, 1);
+  -webkit-box-shadow: inset -1px -1px 0 0 rgba(180, 180, 180, 1), inset 1px 1px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -1px -1px 0 0 rgba(180, 180, 180, 1), inset 1px 1px 0 0 rgba(255, 255, 255, 1);
+}
+
+.actualTheme{
+  width: 90%;
+  height: 36px;
+  text-indent: 10px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  background-color: rgba(46, 50, 251, 1);
+  border: 1px solid rgba(51,53,143,0.20);
+  -webkit-box-shadow: inset -1px -1px 0 0 rgba(230, 220, 228, 1), inset 1px 1px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -1px -1px 0 0 rgba(230, 220, 228, 1), inset 1px 1px 0 0 rgba(255, 255, 255, 1);
+}
+
+.actualTheme::first-letter{
+  text-decoration: underline;
+}
+
+#formulario>label{
+  font-family: 'Chakra Petch Regular'
+}
+
+#formulario>figure{
+  display: inline-block;
+  position: relative;
+  left: 7%;
+  top: 59px;
+}
+
+#formulario>button:nth-of-type(1){
+  width: 10%;
+  height: 36px;
+  left: 57%;
+  top: 44px;
+}
+
+#formulario>button:nth-of-type(2){
+  width: 12%;
+  height: 36px;
+  left: 57.5%;
+  top: 44px;
+}
+
+#formulario>button:nth-of-type(3){
+  width: 3%;
+  height: 36px;
+  left: 57.5%;
+  top: 44px;
+}
+
+/* #formulario button:nth-of-type(3) img{
+  transform: rotate(-270deg);
+} */
+
+#formulario>a{
+  text-decoration: none;
+  line-height: 28px;
+  display: inline-block;
+  position: relative;
+  left: 58.5%;
+  top: 44px;
+  color: rgba(255, 255, 255, 1);
+}
+
+#formulario>button:nth-of-type(1):hover, #formulario>button:nth-of-type(2):hover, #formulario>button:nth-of-type(2):hover ~ button, #formulario>button:nth-of-type(3):hover, #formulario>button:nth-of-type(1):active, #formulario>button:nth-of-type(2):active, #formulario>button:nth-of-type(3):active{
+  outline: 1px dotted black;
+  outline-offset: -5px;
+  background-color: rgba(206, 54, 219, 1);
+}
+
+#formulario>a:hover{
+  border: 1px dotted rgba(136, 128, 155, 1);
+}
+
+#formulario>a:active{
+  color: rgba(136, 128, 155, 1);
+}
+
+#arrow{
+  content: url("../IMG/arrow_dark.svg");
+}
+
+/* #logo{
+  content: url("../IMG/gifOF_logo_dark.png");
+} */
+
+#inputTextForm{
+  width: 85%;
+  height: 48px;
+  position: relative;
+  left: 1%;
+  top: 12px;
+  text-indent: 10px;
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+  border: 1px solid rgba(151, 151, 151, 1);
+}
+
+#btnSearchFormSubmit{
+  width: 9%;
+  height: 36px;
+  position: relative;
+  left: 2%;
+  top: 14px;
+  padding-bottom: 5px;
+}
+
+#btnSearchFormSubmit img{
+  content: url("../IMG/lupa_light.svg");
+}
+
+#btnSearchFormSubmit:active{
+  background-color: rgba(206, 54, 219, 1);
+  outline: 1px dotted rgba(17, 0, 56, 1);
+  outline-offset: -5px;
+}
+
+#btnSearchFormSubmit:active img{
+  content: url("../IMG/lupa_light.svg");
+}
+
+#btnSearchFormSubmit:disabled img{
+  content: url("../IMG/lupa_inactive_dark.svg");
+}
+
+#btnSearchFormSubmit:disabled{
+  background-color: rgba(180, 180, 180, 1);
+  color: rgba(143, 143, 143, 1);
+}
+
+#btnSearchFormSubmit img{
+  position: relative;
+  top: 4px;
+  right: 10px
+}
+
+#palabrasSugeridas{
+  background-color: rgba(180, 180, 180, 1);
+  width: 85%;
+  padding-top: 17px;
+  padding-bottom: 6px;
+  position: absolute;
+  left: 7%;
+  top: 300px;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  visibility: hidden;
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(143, 143, 143, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(143, 143, 143, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+#palabrasSugeridas label{
+  width: 85%;
+  height: 34px;
+  position: relative;
+  margin: 0px 0px 11px 16px;
+  background-color: rgba(204, 204, 204, 1);
+  border: 1px solid rgba(17, 0, 56, 1);
+  -webkit-box-shadow: inset -1px -1px 0 0 rgba(180, 180, 180, 1), inset 1px 1px 0 0 rgba(255,255,255,1);
+  box-shadow: inset -1px -1px 0 0 rgba(180, 180, 180, 1), inset 1px 1px 0 0 rgba(255,255,255,1);
+}
+
+#palabrasSugeridas label:hover{
+  outline: 1px dotted rgba(17, 0, 56, 1);
+  outline-offset: -3px;
+}
+
+#gifSugerencias{
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 200px;
+}
+
+#gifTrending{
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 300px;
+}
+
+#gifTrending>button{
+  width: 100px;
+  height: 32px;
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 45%;
+  margin-bottom: 20px;
+}
+
+/*Estilo para los contenedores de gifs*/
+
+.gifs{
+  width: 85%;
+  position: relative;
+  left: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/*Estilo para los gifs en la sección de Tags Sugeridos*/
+
+.bluePrintTagSugerido{
+  width: 300px;
+  height: 315px;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  background-color: rgba(180, 180, 180, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(92, 92, 92, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(92, 92, 92, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+.bluePrintTagSugerido>img, .bluePrintTagSugerido button, .bluePrintTagSugerido>label{
+  display: block;
+  position: relative;
+}
+
+.bptsBtnX{
+  width: 19px;
+  height: 17px;
+  left:90%;
+  top: 2%;
+  z-index: 2;
+  background-image: url('../IMG/close.svg');
+}
+
+.bluePrintTagSugerido>label{
+  bottom: 4%;
+  left: 1%;
+  width: 97.5%;
+  text-align: left;
+  overflow: hidden;
+}
+
+.bluePrintTagSugerido>img{
+  width: 98%;
+  height: 280px;
+  bottom: 3%;
+  left: 1%;
+}
+
+.bptsSeeMore{
+  width: 30%;
+  height: 34px;
+  bottom: 20%;
+  left: 5%;
+  color: rgba(255,255,255,1);
+  background-color: rgba(46, 50, 251, 1);
+  border: 1px solid rgba(76, 47, 153, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(33, 36, 179, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(33, 36, 179, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+.bluePrintTagSugerido:hover img{
+  outline-style: dotted;
+  outline: 1px dotted rgba(17, 0, 56, 1);
+  outline-offset: -2px;
+}
+
+.bluePrintTagSugerido:hover .bptsSeeMore{
+  background-color: rgba(38, 41, 204, 1);
+  outline-style: dotted;
+  outline: 1px dotted rgba(17, 0, 56, 1);
+  outline-offset: -5px;
+}
+
+/* Estilo para gifs Trending*/
+
+.blueprintTrendingGif{
+  width: 300px;
+  height: 315px;
+  margin: 0px 0px 16px 0px;
+  position: relative;
+  top: 20px;
+  background-color: rgba(180, 180, 180, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(92, 92, 92, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(92, 92, 92, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+.blueprintTrendingGif > label, .blueprintTrendingGif > img{
+  display: block;
+  position: relative;
+}
+
+.blueprintTrendingGif > label{
+  width: 98%;
+  bottom: 20px;
+  left: 1%;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.blueprintTrendingGif:hover label{
+  opacity: 1;
+}
+
+.blueprintTrendingGif:hover img{
+  outline: 1px dotted rgba(17, 0, 56, 1);
+  outline-offset: -2px;
+}
+
+.blueprintTrendingGif > img{
+  width: 98%;
+  height: 308px;
+  left: 1%;
+  top: 1%;
+}
+
+/*Estilo para la sección de search*/
+
+.btnTagRelated{
+  position: relative;
+  height: 34px;
+  padding: 10px;
+  line-height: 0px;
+  color: white;
+  background-color: rgba(46, 50, 251, 1);
+  border: 1px solid rgba(76, 47, 153, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(33, 36, 179, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(33, 36, 179, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+#tagsForSearch{
+  width: 85%;
+  position: relative;
+  top: 120px;
+  left: 7%;
+}
+
+#tagsForSearch button:first-child ~ button{
+  margin-left: 15px;
+}
+
+#searchGifs{
+  position: relative;
+  top: 200px;
+}
+
+#searchGifs>button{
+  width: 100px;
+  height: 32px;
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 45%;
+  margin-bottom: 20px;
+}
+
+/*Estilo para página mis Guifos*/
+
+#misGuifos{
+  position: relative;
+  top: 100px;
+}
+
+/*Estilo para crear Guifos*/
+
+.windowInfo{
+  width: 50%;
+  height: 400px;
+  position: relative;
+  left: 27%;
+  top: 150px;
+  background-color: rgba(180, 180, 180, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(180, 180, 180, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(180, 180, 180, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+.windowInfo p{
+  position: relative;
+  width: 80%;
+  left: 10%;
+}
+
+.windowInfo p, .windowInfo ol{
+  position: relative;
+  width: 80%;
+  left: 10%;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-size: 14px;
+  color: rgba(17, 0, 56, 1);
+}
+
+.windowInfo ol{
+  line-height: 30px;
+}
+
+.windowInfo img{
+  position: relative;
+  top: 30px;
+  left: 4%;
+}
+
+.windowInfoBtnCancel{
+  background-color: rgba(17, 0, 56, 1);
+}
+
+.btnWindow{
+  width: 20%;
+  height: 36px;
+  position: relative;
+  top: 30px;
+  left: 55%;
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.logoOnCreateGif{
+  left: 15px;
+}
+
+#formulario figure>a ~ a>img{
+  position: relative;
+  left: 20px;
+}
+
+/*STAGE 1*/
+
+#windowRec{
+  display: none;
+}
+
+.Stage1{
+  position: relative;
+  height: 550px;
+}
+
+.Stage1 video{
+  width: 98%;
+  height:400px;
+  position: relative;
+  left: 0.5%;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-color: rgba(180, 180, 180, 1);
+  border: 1px solid rgba(151, 151, 151, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+}
+
+.imgPreviewGif{
+  width: 98%;
+  height:400px;
+  position: relative;
+  left: 20%;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-color: rgba(180, 180, 180, 1);
+  border: 1px solid rgba(151, 151, 151, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+}
+
+.Stage1{
+  margin: 10px;
+}
+
+.bptsBtnXRec{
+  position: relative;
+  left:96.5%;
+  bottom: 20px;
+  background-image: url('../IMG/close.svg');
+}
+
+.btnsWindowRec button:nth-of-type(1) img{
+  content: url("../IMG/camera_light.svg");
+}
+
+.btnsWindowRec button:first-child{
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  position: relative;
+  top: 32px;
+}
+
+.btnsWindowRec button:first-child img{
+  margin:0px;
+  padding: 0px;
+  position: relative;
+  top: 0px;
+}
+
+.btnsWindowRec{
+  position: relative;
+  left: 20%;
+}
+
+/*RECSTART*/
+
+.btnsWindowRecStart button{
+  left: 54%;
+  background-color: rgba(255, 97, 97, 1);
+  border: 1px solid rgba(17, 0, 56, 1);
+  -webkit-box-shadow: inset -1px -1px 0 0 rgba(153, 58, 58, 1), inset 1px 1px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -1px -1px 0 0 rgba(153, 58, 58, 1), inset 1px 1px 0 0 rgba(255, 255, 255, 1);
+}
+
+.timeInfo{
+  width: 20%;
+  height: 36px;
+  text-align: left;
+  text-indent: 55%;
+  position: relative;
+  top: 32px;
+  left: 1%;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(151, 151, 151, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+}
+
+.btnWindowStage2{
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  position: relative;
+  top: 32px;
+}
+
+.btnWindowStage2 img{
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 0px;
+}
+
+/*Vista Previa*/
+
+.btnsWindowGifPreview, .btnsWindowRecStart{
+  display: none;
+}
+
+.btnsWindowGifPreview button:first-of-type{
+  width: 20px;
+  height: 20px;
+  top: 36px;
+  left: 3%;
+  visibility: hidden;
+}
+
+.btnsWindowGifPreview button:first-of-type ~ button{
+  left: 35%;
+}
+
+.btnsWindowGifPreview button:nth-child(3):hover{
+  background-color: rgba(17, 0, 56, 1);
+  outline: 1px dotted rgba(255, 255, 255, 1);
+  outline-offset: -5px;
+}
+
+.btnsWindowGifPreview img{
+  margin: 0px;
+  top: 0px;
+}
+
+.loadBar{
+  width: 20%;
+  height: 20px;
+  position: relative;
+  top: 38px;
+  right: 37%;
+  display: inline-block;
+  background-color: rgba(180, 180, 180, 1);
+  -webkit-box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 1), inset -2px -2px 0 0 rgba(255, 252, 252, 1);
+  box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 1), inset -2px -2px 0 0 rgba(255, 252, 252, 1);
+}
+
+.loadFragment{
+  width: 5%;
+  height: 14px;
+  position: relative;
+  left: 1%;
+  top: 1.5px;
+  display: inline-block;
+  background-color: rgba(238, 62, 254, 1);
+  border: 1px solid rgba(180, 180, 180, 1);
+}
+
+.unloadFragment{
+  width: 5%;
+  height: 14px;
+  position: relative;
+  left: 1%;
+  top: 1.5px;
+  display: inline-block;
+  background-color: rgba(153, 153, 153, 1);
+  border: 1px solid rgba(180, 180, 180, 1);
+}
+
+/*UPLOADING GIF WINDOW*/
+
+#windowUploading{
+  display: none;
+}
+
+.whiteScreen{
+  width: 98%;
+  height: 400px;
+  position: relative;
+  left: 0.5%;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(151, 151, 151, 1);
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(230, 230, 230, 1), inset 2px 2px 0 0 rgba(0, 0, 0, 1);
+}
+
+.whiteScreen label{
+  display: block;
+  position: relative;
+  left: 45%;
+  top: 180px;
+}
+
+.whiteScreen figure{
+  position: relative;
+  left: 45%;
+  top: 100px;
+}
+
+.whiteScreen figure figcaption{
+  position: relative;
+  top: 35px;
+  right: 5%;
+  font-family: "Chakra Petch Bold";
+  font-size: 16px;
+  color: rgba(17, 0, 56, 1);
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.uploadingBar{
+  width: 40%;
+  left: 32%;
+  top: 170px;
+}
+
+.uploadingBar .loadFragment, .uploadingBar .unloadFragment{
+  width: 3%;
+}
+
+.whiteScreen label{
+  font-size: 12px;
+  color: rgba(17,0,56,0.64);
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.btnsWindowUploadGif button{
+  left: 79%;
+}
+
+/*UPLOAD GIF*/
+
+#windowUploadFinish{
+  display: none;
+}
+
+.FinalStage{
+  height: 470px;
+}
+
+.FinalStage figure{
+  width: 50%;
+  height: 250px;
+  position: relative;
+  left: 2%;
+  top: 30px;
+  -webkit-box-shadow: inset -2px -2px 0 0 rgba(180, 180, 180, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+  box-shadow: inset -2px -2px 0 0 rgba(180, 180, 180, 1), inset 2px 2px 0 0 rgba(255, 255, 255, 1);
+}
+
+.FinalStage figure img{
+  width: 99%;
+  height: 245px;
+  margin: 0px;
+  position: relative;
+  top: 2px;
+  left: 0.5%;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.FinalStage div ~ button{
+  position: relative;
+  left: 73%;
+}
+
+.FinalStage figure figcaption{
+  font-family: "Chakra Petch Bold";
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+  bottom: 220px;
+  left: 106%;
+}
+
+.btnsUploadGif{
+  position: relative;
+  bottom: 170px;
+}
+
+.btnsUploadGif button{
+  width: 38%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1440px){
+
+  /*Index*/
+
+  #formulario>button:nth-of-type(1){
+    left: 54%;
+  }
+
+  #formulario>button:nth-of-type(2){
+    left: 54.5%;
+  }
+
+  #formulario>button:nth-of-type(3){
+    left: 54.5%;
+  }
+
+  #formulario>a{
+    left: 55.5%;
+  }
+
+  /*MENU THEMES*/
+
+  .menu, .menuMyGuifoPage{
+    left: 71%;
+  }
+
+  .menuSearchPage{
+    left: 71%;
+  }
+
+  /*TestRec*/
+
+  .Stage1{
+    height: 450px;
+  }
+
+  .Stage1 video{
+    height: 300px;
+  }
+
+  .btnsWindowRec{
+    position: relative;
+    left: 18.8%;
+  }
+
+  /*RECSTART*/
+
+  .btnsWindowRecStart button{
+    left: 53%;
+  }
+
+  .timeInfo{
+    text-indent: 45%;
+  }
+
+  /*Vista Previa*/
+
+  .imgPreviewGif{
+    width: 98%;
+    height:300px;
+  }
+
+  .btnsWindowGifPreview button:first-of-type ~ button{
+    left: 34.5%;
+  }
+
+  .loadFragment{
+    width: 4.7%;
+  }
+
+  .unloadFragment{
+    width: 4.7%;
+  }
+
+  /*UPLOADING*/
+
+  .whiteScreen{
+    height: 300px;
+  }
+
+  .whiteScreen figure{
+    top: 50px;
+  }
+
+  .whiteScreen figure figcaption{
+    right: 8%;
+  }
+
+  .uploadingBar{
+    top: 100px;
+    left: 32%;
+  }
+  .whiteScreen label{
+    top: 110px;
+    left: 45%;
+  }
+
+  .uploadingBar .loadFragment, .uploadingBar .unloadFragment{
+    width: 2.78%;
+  }
+
+  /*UPLOAD GIF*/
+
+  .FinalStage{
+    height: 470px;
+  }
+}
+
+@media (max-width: 1024px){
+
+  /*Index*/
+
+  #formulario>button:nth-of-type(1){
+    left: 50%;
+  }
+
+  #formulario>button:nth-of-type(2){
+    left: 50.5%;
+  }
+
+  #formulario>button:nth-of-type(3){
+    left: 50.5%;
+  }
+
+  #formulario>a{
+    left: 51.5%;
+  }
+
+  #btnSearchFormSubmit img{
+    left: 2%;
+  }
+
+  /*MENU THEMES*/
+
+  .menu, .menuMyGuifoPage{
+    left: 69.8%;
+  }
+
+  .menuSearchPage{
+    left: 69.8%;
+  }
+
+  /*Estilo para los contenedores de gifs*/
+
+  .gifs{
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  /*Estilo para ventana crear Guifos*/
+
+  .windowInfo{
+    width: 60%;
+  }
+
+  /*TestRec*/
+
+  .Stage1{
+    height: 450px;
+  }
+
+  .Stage1 video{
+    height: 260px;
+  }
+
+  .btnsWindowRec{
+    position: relative;
+    left: 17.8%;
+  }
+
+  /*RECSTART*/
+
+  .btnsWindowRecStart button{
+    left: 52%;
+  }
+
+  .timeInfo{
+    text-indent: 40%;
+  }
+
+  /*Vista Previa*/
+
+  .imgPreviewGif{
+    width: 98%;
+    height:300px;
+  }
+
+  .btnsWindowGifPreview button:first-of-type ~ button{
+    left: 33.5%;
+  }
+
+  .loadFragment{
+    width: 4.5%;
+  }
+
+  .unloadFragment{
+    width: 4.5%;
+  }
+
+  /*UPLOADING*/
+
+  .whiteScreen{
+    height: 300px;
+  }
+
+  .whiteScreen figure{
+    top: 50px;
+  }
+
+  .whiteScreen figure figcaption{
+    right: 10%;
+  }
+
+  .uploadingBar{
+    top: 100px;
+    left: 33%;
+  }
+
+  .whiteScreen label{
+    top: 110px;
+    left: 45%;
+  }
+
+  .uploadingBar .loadFragment, .uploadingBar .unloadFragment{
+    width: 2.68%;
+  }
+
+  /*UPLOAD GIF*/
+
+  .FinalStage{
+    height: 470px;
+  }
+}
+
+@media (max-width: 768px){
+
+  /*Index*/
+
+  #formulario>button:nth-of-type(1){
+    left: 45%;
+  }
+
+  #formulario>button:nth-of-type(2){
+    left: 45.5%;
+  }
+
+  #formulario>button:nth-of-type(3){
+    left: 45.5%;
+  }
+
+  #formulario>a{
+    left: 46.5%;
+  }
+
+  #btnSearchFormSubmit img{
+    left: 2%;
+  }
+
+  /*MENU THEMES*/
+
+  .menu, .menuMyGuifoPage{
+    left: 67.8%;
+  }
+
+  .menuSearchPage{
+    left: 67.8%;
+  }
+
+  /*Estilo para los contenedores de gifs*/
+
+  .gifs{
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  /*Estilo para ventana crear Guifos*/
+
+  .windowInfo{
+    width: 70%;
+    left: 15%;
+  }
+
+  .windowInfo p, .windowInfo ol{
+    position: relative;
+    width: 80%;
+    left: 15%;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    color: rgba(17, 0, 56, 1);
+  }
+
+  /*TestRec*/
+
+  .Stage1{
+    height: 450px;
+  }
+
+  .Stage1 video{
+    height: 225px;
+  }
+
+  .btnsWindowRec{
+    position: relative;
+    left: 16.8%;
+  }
+
+  /*RECSTART*/
+
+  .btnsWindowRecStart button{
+    left: 51%;
+  }
+
+  .timeInfo{
+    text-indent: 30%;
+  }
+
+  /*Vista Previa*/
+
+  .imgPreviewGif{
+    width: 98%;
+    height:300px;
+  }
+
+  #windowRec .buttonForm{
+    font-size: 14px;
+  }
+
+  .btnsWindowGifPreview button:first-of-type ~ button{
+    left: 32.5%;
+  }
+
+  .loadFragment{
+    width: 4.2%;
+  }
+
+  .unloadFragment{
+    width: 4.2%;
+  }
+
+  /*UPLOADING*/
+
+  .whiteScreen{
+    height: 300px;
+  }
+
+  .whiteScreen figure{
+    top: 50px;
+  }
+
+  .whiteScreen figure figcaption{
+    right: 12%;
+  }
+
+  .uploadingBar{
+    top: 100px;
+    left: 34%;
+  }
+
+  .whiteScreen label{
+    top: 110px;
+    left: 40%;
+  }
+
+  .uploadingBar .loadFragment, .uploadingBar .unloadFragment{
+    width: 2.58%;
+  }
+
+  /*UPLOAD GIF*/
+
+  .FinalStage{
+    height: 470px;
+  }
+}
+
+@media (max-width: 425px){
+
+  /*Index*/
+
+  #formulario>label{
+    height: 60px;
+    text-indent: 10px;
+    text-align: center;
+  }
+
+  #formulario>button:nth-of-type(1){
+    left: 19%;
+    width: 15%;
+  }
+
+  #formulario>button:nth-of-type(2){
+    left: 19.5%;
+    width: 15%;
+  }
+
+  #formulario>button:nth-of-type(3){
+    left: 19.5%;
+    top: 52px;
+    width: 5%;
+  }
+
+  #formulario>a{
+    left: 20%;
+    top: 52px;
+  }
+
+  #btnSearchFormSubmit img{
+    left: 3%;
+  }
+
+  #palabrasSugeridas{
+    top: 330px;
+  }
+
+  #tagsForSearch button:nth-child(3) ~ button{
+    display: none;
+  }
+
+  /*MENU THEMES*/
+
+  .menu, .menuMyGuifoPage{
+    left: 57.1%;
+    top: 175px;
+    width: 20%;
+  }
+
+  .menuSearchPage{
+    left: 57.1%;
+    bottom: 90px;
+    width: 20%;
+  }
+
+  /*Estilo para los contenedores de gifs*/
+
+  .gifs{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  /*Estilo para ventana crear Guifos*/
+
+  .windowInfo{
+    width: 80%;
+    left: 10%;
+  }
+
+  .windowInfo img{
+    left: 2%;
+  }
+
+  .windowInfo p, .windowInfo ol{
+    font-size: 12px;
+  }
+
+  .windowInfo button{
+    font-size: 12px;
+  }
+
+  /*TestRec*/
+
+  .Stage1{
+    height: 450px;
+  }
+
+  .btnWindowStage1{
+    font-size: 12px;
+  }
+
+  .Stage1 video{
+    height: 145px;
+  }
+
+  .btnsWindowRec{
+    position: relative;
+    left: 13%;
+  }
+
+  .Stage1 .bptsBtnXRec{
+    left: 93%;
+  }
+
+  /*RECSTART*/
+
+  .btnsWindowRecStart button{
+    left: 47%;
+  }
+
+  .timeInfo{
+    text-indent: 15%;
+    font-size: 10px;
+  }
+
+  /*Vista Previa*/
+
+  .imgPreviewGif{
+    width: 98%;
+    height:300px;
+  }
+
+  #windowRec .buttonForm{
+    font-size: 14px;
+  }
+
+  .btnsWindowGifPreview button:first-of-type ~ button{
+    left: 29.5%;
+  }
+
+  .loadBar{
+    width: 26%;
+    right: 39%;
+  }
+
+  .loadFragment{
+    width: 3.8%;
+  }
+
+  .unloadFragment{
+    width: 3.8%;
+  }
+
+  /*UPLOADING*/
+
+  .whiteScreen{
+    height: 300px;
+  }
+
+  .whiteScreen figure{
+    top: 50px;
+  }
+
+  .whiteScreen figure figcaption{
+    right: 25%;
+  }
+
+  .uploadingBar{
+    top: 100px;
+    left: 21%;
+    width: 65%;
+  }
+
+  .whiteScreen label{
+    top: 110px;
+    left: 35%;
+  }
+
+  .uploadingBar .loadFragment, .uploadingBar .unloadFragment{
+    width: 2.58%;
+  }
+
+  /*UPLOAD GIF*/
+
+  .FinalStage{
+    height: 470px;
+  }
+}
