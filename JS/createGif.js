@@ -117,7 +117,7 @@ window.onload = function () {
 	for(let x of outNow){
 		x.addEventListener("click", allIsDone);
 	}
-
+	writeOnLocalStorage();
   visitas();
   selectedTheme();
 	getRandomId();
@@ -136,7 +136,7 @@ window.onload = function () {
 
 function writeOnLocalStorage(idGif){
   if(window.localStorage.getItem("misGuifOs") === null){
-    window.localStorage.setItem("misGuifOs", "#idGif");
+    window.localStorage.setItem("misGuifOs", "");
   }else {
     window.localStorage.setItem("misGuifOs", window.localStorage.getItem("misGuifOs") + "#" + idGif);
   }
@@ -173,11 +173,11 @@ function getRandomId (){
 function saveTempRandomId (randomid){
 	tempRandomId = randomid;
   let stringGifOs = searchOnLocalStorage();
-  if(stringGifOs === undefined){
-    //window.alert("¡Wow! Esto se ve muy solo. ¿Qué tal si creas primero un GIF? Da click en Crear un GIF y muestra al mundo lo creativo que eres.");
+  if(stringGifOs !== null){
+		searchMyGifOs(stringGifOs);
   }
   else {
-    searchMyGifOs(stringGifOs);
+		console.log("¡Wow! Esto se ve muy solo. ¿Qué tal si creas primero un GIF? Da click en Crear un GIF y muestra al mundo lo creativo que eres.");
   }
 }
 
@@ -378,12 +378,12 @@ function previewGif(){
 		// linkDownload = document.createElement("a");
     // linkDownload.style.display = "none";
     // linkDownload.href = URLMP4;
-    // linkDownload.download = "TuGuifo.mp4";
-    document.body.appendChild(linkDownload);
-    linkDownload.click();
-    setTimeout(function (){
-    	document.body.removeChild(linkDownload);
-    }, 100);
+    // // linkDownload.download = "TuGuifo.mp4";
+    // // document.body.appendChild(linkDownload);
+    // linkDownload.click();
+    // setTimeout(function (){
+    // 	document.body.removeChild(linkDownload);
+    // }, 100);
 	};
 
 	videoElement.ondurationchange = function (){
