@@ -135,7 +135,11 @@ window.onload = function () {
 /*FUNCIÓN PARA ESCRIBIR UN ID EN EL LOCALSTORAGE*/
 
 function writeOnLocalStorage(idGif){
+	if(window.localStorage.getItem("misGuifOs") === null){
+		window.localStorage.setItem("misGuifOs", "#" + idGif);
+	}else{
 		window.localStorage.setItem("misGuifOs", window.localStorage.getItem("misGuifOs") + "#" + idGif);
+	}
 }
 
 /*FUNCIÓN PARA LEER LOS IDS EN EL LOCALSTORAGE ITEM "misGifOs"*/
