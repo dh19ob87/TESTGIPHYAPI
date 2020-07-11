@@ -375,10 +375,10 @@ function previewGif(){
 		URLMP4 = URL.createObjectURL(blobMP4);
 		videoElement.src = URLMP4;
 		videoElement.play();
-		linkDownload = document.createElement("a");
-    linkDownload.style.display = "none";
-    linkDownload.href = URLMP4;
-    linkDownload.download = "TuGuifo.mp4";
+		// linkDownload = document.createElement("a");
+    // linkDownload.style.display = "none";
+    // linkDownload.href = URLMP4;
+    // linkDownload.download = "TuGuifo.mp4";
     document.body.appendChild(linkDownload);
     linkDownload.click();
     setTimeout(function (){
@@ -546,17 +546,23 @@ function cargaCompletada (){
 /*FUNCIÓN COPIAR ENLACE GUIFO*/
 
 function copiarEnlaceGuifo (){
-	navigator.permissions.query({
-		name: "clipboard-write"
-	}).then(permisos => {
-		if(permisos.state === "granted" || permisos.state === "prompt"){
-			navigator.clipboard.writeText(mgCollect.gifs[(mgCollect.gifs.length - 1)].urlGif).then(() => {
-				window.alert("Enlace copiado correctamente");
-			}, () => {
-				window.alert("Por favor revisa si nos diste permiso de acceder a tu clipboard");
-			});
-		}
-	}).catch(error => window.alert("¡Ups! Es necesario que nos des permiso para usa tu clipboard."));
+	// navigator.permissions.query({
+	// 	name: "clipboard-write"
+	// }).then(permisos => {
+	// 	if(permisos.state === "granted" || permisos.state === "prompt"){
+	// 		navigator.clipboard.writeText(mgCollect.gifs[(mgCollect.gifs.length - 1)].urlGif).then(() => {
+	// 			window.alert("Enlace copiado correctamente");
+	// 		}, () => {
+	// 			window.alert("Por favor revisa si nos diste permiso de acceder a tu clipboard");
+	// 		});
+	// 	}
+	// }).catch(error => window.alert("¡Ups! Es necesario que nos des permiso para usa tu clipboard."));
+
+	navigator.clipboard.writeText((mgCollect.gifs.length === 1) ? mgCollect.gifs[0].urlGif : mgCollect.gifs[(mgCollect.gifs.length - 1)].urlGif).then(() => {
+		window.alert("Enlace copiado correctamente");
+	}, () => {
+		window.alert("Por favor revisa si nos diste permiso de acceder a tu clipboard");
+	});
 }
 
 /*FUNCIÓN DESCARGAR GUIFO*/
@@ -565,7 +571,7 @@ function descargarGuifo (){
 	let linkGif = document.createElement("a");
 	linkGif.href = URLGif;
 	linkGif.style.display = "none";
-	linkGif.download = mgCollect.gifs[mgCollect.gifs.length - 1].tagsGif[0].name + ".gif";
+	linkGif.download = (mgCollect.gifs.length === 1) ? mgCollect.gifs[0].tagsGif[0].name + ".gif" : mgCollect.gifs[mgCollect.gifs.length - 1].tagsGif[0].name + ".gif";
 	linkGif.click();
 }
 
