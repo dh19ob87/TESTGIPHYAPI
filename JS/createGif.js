@@ -511,7 +511,7 @@ function subirGuifo(){
 		alert("Tu gif está listo");
 		cargaCompletada();
 		let response = xhr.response;
-		console.log(response, response.data.id);
+		alert(response, response.data.id);
 		writeOnLocalStorage(response.data.id);
 		if(secciones[1].children[1].childElementCount !=0){
 	    while(secciones[1].children[1].lastElementChild){
