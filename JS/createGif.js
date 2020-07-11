@@ -346,7 +346,7 @@ function recordingGif(){
 		frameRate: 1,
 		quality: 360,
 		height: 400,
-		onGifRecordingStarted: () => console.log("Grabación iniciada");
+		onGifRecordingStarted: () => console.log("Grabación iniciada")
 	});
 	recorderRTC.startRecording();
 	startRec = performance.now();
