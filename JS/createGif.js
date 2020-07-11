@@ -117,7 +117,7 @@ window.onload = function () {
 	for(let x of outNow){
 		x.addEventListener("click", allIsDone);
 	}
-	writeOnLocalStorage();
+
   visitas();
   selectedTheme();
 	getRandomId();
@@ -135,10 +135,8 @@ window.onload = function () {
 /*FUNCIÓN PARA ESCRIBIR UN ID EN EL LOCALSTORAGE*/
 
 function writeOnLocalStorage(idGif){
-  if(window.localStorage.getItem("misGuifOs") === null){
-    window.localStorage.setItem("misGuifOs", "");
-  }else {
-    window.localStorage.setItem("misGuifOs", window.localStorage.getItem("misGuifOs") + "#" + idGif);
+  if(window.localStorage.getItem("misGuifOs") !== null){
+		window.localStorage.setItem("misGuifOs", window.localStorage.getItem("misGuifOs") + "#" + idGif);
   }
 }
 
@@ -150,7 +148,9 @@ function searchOnLocalStorage(){
   	storageData.shift();
   	myGifOs = storageData.join();
   	return myGifOs;
-  }
+  }else{
+		return 0;
+	}
 }
 
 /*FUNCIÓN PARA OBTENER UN RANDOM_ID*/
@@ -173,7 +173,7 @@ function getRandomId (){
 function saveTempRandomId (randomid){
 	tempRandomId = randomid;
   let stringGifOs = searchOnLocalStorage();
-  if(stringGifOs !== null){
+  if(stringGifOs !== 0){
 		searchMyGifOs(stringGifOs);
   }
   else {
