@@ -162,7 +162,7 @@ function getRandomId (){
 		saveTempRandomId(jsonId['data']['random_id']);
 		return jsonId['data']['random_id'];
 	}).catch(function (error){
-		console.log(error);
+		console.log("Lo sentimos, no hemos podido establecer comunicación con la API.");
 	});
 
 	return data; // Por si acaso luego debo concatenar otra promesa.
