@@ -135,9 +135,7 @@ window.onload = function () {
 /*FUNCIÓN PARA ESCRIBIR UN ID EN EL LOCALSTORAGE*/
 
 function writeOnLocalStorage(idGif){
-  if(window.localStorage.getItem("misGuifOs") !== null){
 		window.localStorage.setItem("misGuifOs", window.localStorage.getItem("misGuifOs") + "#" + idGif);
-  }
 }
 
 /*FUNCIÓN PARA LEER LOS IDS EN EL LOCALSTORAGE ITEM "misGifOs"*/
@@ -513,6 +511,7 @@ function subirGuifo(){
 		alert("Tu gif está listo");
 		cargaCompletada();
 		let response = xhr.response;
+		console.log(response, response.data.id);
 		writeOnLocalStorage(response.data.id);
 		if(secciones[1].children[1].childElementCount !=0){
 	    while(secciones[1].children[1].lastElementChild){
@@ -558,7 +557,7 @@ function copiarEnlaceGuifo (){
 	// 	}
 	// }).catch(error => window.alert("¡Ups! Es necesario que nos des permiso para usa tu clipboard."));
 
-	navigator.clipboard.writeText((mgCollect.gifs.length === 1) ? mgCollect.gifs[0].urlGif : mgCollect.gifs[(mgCollect.gifs.length - 1)].urlGif).then(() => {
+	navigator.clipboard.writeText((mgCollect.gifs.length === 1) ? mgCollect.gifs[0].urlGif : mgCollect.gifs[mgCollect.gifs.length - 1].urlGif).then(() => {
 		window.alert("Enlace copiado correctamente");
 	}, () => {
 		window.alert("Por favor revisa si nos diste permiso de acceder a tu clipboard");
