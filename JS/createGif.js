@@ -174,7 +174,7 @@ function saveTempRandomId (randomid){
 	tempRandomId = randomid;
   let stringGifOs = searchOnLocalStorage();
   if(stringGifOs === undefined){
-    window.alert("¡Wow! Esto se ve muy solo. ¿Qué tal si creas primero un GIF? Da click en Crear un GIF y muestra al mundo lo creativo que eres.");
+    //window.alert("¡Wow! Esto se ve muy solo. ¿Qué tal si creas primero un GIF? Da click en Crear un GIF y muestra al mundo lo creativo que eres.");
   }
   else {
     searchMyGifOs(stringGifOs);
@@ -346,7 +346,7 @@ function recordingGif(){
 		frameRate: 1,
 		quality: 360,
 		height: 400,
-		onGifRecordingStarted: () => console.log("Grabación iniciada")
+		onGifRecordingStarted: () => {console.log("Grabación iniciada")}
 	});
 	recorderRTC.startRecording();
 	startRec = performance.now();
