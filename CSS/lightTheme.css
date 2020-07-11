@@ -2,12 +2,12 @@
 
 @font-face {
 font-family: "Chakra Petch Regular";
-src: url("../FONTS/ChakraPetch-Regular.ttf");
+src: url("https://dh19ob87.github.io/TESTGIPHYAPI/FONTS/ChakraPetch-Regular.ttf");
 }
 
 @font-face {
 font-family: "Chakra Petch Bold";
-src: url("../FONTS/ChakraPetch-Bold.ttf");
+src: url("https://dh19ob87.github.io/TESTGIPHYAPI/FONTS/ChakraPetch-Bold.ttf");
 }
 
 body{
@@ -273,7 +273,7 @@ label, button, input, a{
 }
 
 #btnSearchFormSubmit img{
-  content: url("../IMG/lupa.svg");
+  content: url("https://dh19ob87.github.io/TESTGIPHYAPI/IMG/lupa.svg");
 }
 
 #btnSearchFormSubmit:active{
@@ -283,11 +283,11 @@ label, button, input, a{
 }
 
 #btnSearchFormSubmit:active img{
-  content: url("../IMG/lupa.svg");
+  content: url("https://dh19ob87.github.io/TESTGIPHYAPI/IMG/lupa.svg");
 }
 
 #btnSearchFormSubmit:disabled img{
-  content: url("../IMG/lupa_inactive.svg");
+  content: url("https://dh19ob87.github.io/TESTGIPHYAPI/IMG/lupa_inactive.svg");
 }
 
 #btnSearchFormSubmit:disabled{
@@ -406,7 +406,7 @@ label, button, input, a{
   left:90%;
   top: 2%;
   z-index: 2;
-  background-image: url('../IMG/close.svg');
+  background-image: url('https://dh19ob87.github.io/TESTGIPHYAPI/IMG/close.svg');
 }
 
 .bluePrintTagSugerido>label{
@@ -655,7 +655,7 @@ label, button, input, a{
   position: relative;
   left:96.5%;
   bottom: 20px;
-  background-image: url('../IMG/close.svg');
+  background-image: url('https://dh19ob87.github.io/TESTGIPHYAPI/IMG/close.svg');
 }
 
 .btnsWindowRec button:first-child{

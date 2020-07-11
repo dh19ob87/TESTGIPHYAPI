@@ -96,7 +96,7 @@ window.onload = function () {
   btnsWindow = document.getElementsByClassName("btnWindow");
   btnsWindow[0].addEventListener("click", function(){
     let linkTemp = document.createElement("a");
-    linkTemp.setAttribute("href","../index.html");
+    linkTemp.setAttribute("href","https://dh19ob87.github.io/TESTGIPHYAPI/index.html");
     document.body.appendChild(linkTemp);
     linkTemp.click();
   });
@@ -281,7 +281,7 @@ function selectedTheme (){
       document.styleSheets[1].disabled = false;
     }
   }
-	logo.src = (localStorage.getItem('selectedTheme') === "day") ? "../IMG/gifOF_logo.png" : "../IMG/gifOF_logo_dark.png";
+	logo.src = (localStorage.getItem('selectedTheme') === "day") ? "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/gifOF_logo.png" : "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/gifOF_logo_dark.png";
 }
 
 /*CONTADOR DE VISITAS*/
@@ -336,7 +336,7 @@ function recTest(){
 function recordingGif(){
 	panels[0].style.display = "none";
 	panels[1].style.display = "block";
-	panels[1].children[1].children[0].src = "../IMG/recording_dark.svg";
+	panels[1].children[1].children[0].src = "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/recording_dark.svg";
 	panels[1].children[1].children[0].style.width = "18px";
 	panels[1].children[1].children[0].style.height = "18px";
 	recorderRTC = new RecordRTC(camStream, {

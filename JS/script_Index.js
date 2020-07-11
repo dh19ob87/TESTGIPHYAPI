@@ -65,7 +65,7 @@ window.onload = function () {
 	let crearGuifoLink = document.getElementsByClassName("buttonForm")[0];
 	crearGuifoLink.addEventListener("click", function(){
 		let linkToCreate = document.createElement("a");
-		linkToCreate.setAttribute("href", "/HTML/captura_gif.html");
+		linkToCreate.setAttribute("href", "https://dh19ob87.github.io/TESTGIPHYAPI/HTML/captura_gif.html");
 		document.body.appendChild(linkToCreate);
 		linkToCreate.click();
 	})
@@ -91,14 +91,14 @@ window.onload = function () {
 			if(btnSearch.childElementCount === 1){
 				btnSearch.textContent = "";
 				let lupa = document.createElement("img");
-				lupa.src = "../IMG/lupa.svg";
+				lupa.src = "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/lupa.svg";
 				btnSearch.appendChild(lupa);
 			}
 		}) () : (function (){
 			if(btnSearch.childElementCount <= 2){
 				btnSearch.textContent = "";
 				let lupa = document.createElement("img");
-				lupa.src = "../IMG/lupa.svg";
+				lupa.src = "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/lupa.svg";
 				btnSearch.appendChild(lupa);
 				btnSearch.appendChild(document.createTextNode(" Buscar"));
 			}
@@ -591,8 +591,8 @@ function selectedTheme (){
   }
 	btnThemes[1].style.backgroundColor = (localStorage.getItem('selectedTheme') === "day") ? "rgba(247, 201, 243, 1)" : "rgba(238, 62, 254, 1)";
 	btnThemes[2].style.backgroundColor = (localStorage.getItem('selectedTheme') === "day") ? "rgba(247, 201, 243, 1)" : "rgba(238, 62, 254, 1)";
-	logo.src = (localStorage.getItem('selectedTheme') === "day") ? "./IMG/gifOF_logo.png" : "./IMG/gifOF_logo_dark.png";
-	dropdownarrow.src = (localStorage.getItem('selectedTheme') === "day") ? "./IMG/dropdown.svg" : "./IMG/dropdown_white.svg";
+	logo.src = (localStorage.getItem('selectedTheme') === "day") ? "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/gifOF_logo.png" : "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/gifOF_logo_dark.png";
+	dropdownarrow.src = (localStorage.getItem('selectedTheme') === "day") ? "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/dropdown.svg" : "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/dropdown_white.svg";
 }
 
 /*Función para ocultar o mostrar el menú de temas*/
@@ -628,8 +628,8 @@ function changeTheme (label){
 
 	btnThemes[1].style.backgroundColor = (localStorage.getItem('selectedTheme') === "day") ? "rgba(247, 201, 243, 1)" : "rgba(238, 62, 254, 1)";
 	btnThemes[2].style.backgroundColor = (localStorage.getItem('selectedTheme') === "day") ? "rgba(247, 201, 243, 1)" : "rgba(238, 62, 254, 1)";
-	logo.src = (localStorage.getItem('selectedTheme') === "day") ? "./IMG/gifOF_logo.png" : "./IMG/gifOF_logo_dark.png";
-	dropdownarrow.src = (localStorage.getItem('selectedTheme') === "day") ? "./IMG/dropdown.svg" : "./IMG/dropdown_white.svg";
+	logo.src = (localStorage.getItem('selectedTheme') === "day") ? "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/gifOF_logo.png" : "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/gifOF_logo_dark.png";
+	dropdownarrow.src = (localStorage.getItem('selectedTheme') === "day") ? "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/dropdown.svg" : "https://dh19ob87.github.io/TESTGIPHYAPI/IMG/dropdown_white.svg";
 }
 
 function visitas (){
